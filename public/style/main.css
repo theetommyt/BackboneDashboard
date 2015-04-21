@@ -3,14 +3,25 @@
 body {
   font-family: 'Roboto', 'Calibri', 'Lucida-Sans', 'Arial', sans-serif;
   margin: 1%;
+  background-image: url('http://i.imgur.com/8rQCrfd.jpg');
+  background-size: cover;
 }
-h1,h2,h3,h4,h5,h6 {
+h1 {
+  font-family: 'Roboto', Arial, sans;
+  color: blue;
+  text-shadow: 2px 1px 5px white;
+  font-size: 40px;
+  margin: 1px;
+}
+
+h2,h3,h4,h5,h6 {
   font-family: 'Droid Serif', 'Times New Roman', 'Times', serif;
   color: rgba(10,60,150, 0.8);
   text-shadow: 1px 4px 6px #fff, 0 0 0 #000, 1px 4px 6px #def;
   margin-top: 2px;
   margin-bottom: 2px;
 }
+
 
 .row {
   display: block;
@@ -26,7 +37,16 @@ h1,h2,h3,h4,h5,h6 {
   padding: 2px;
   position: relative;
   width: 46%;
+  border-radius: 10px;
 }
+
+.block-half:nth-child(1) {
+  background-color: #1abc9c;
+}
+.block-half:nth-child(2) {
+  background-color: #16a085;
+}
+
 
 .block-third {
   display: block;
@@ -35,7 +55,19 @@ h1,h2,h3,h4,h5,h6 {
   padding: 2px;
   position: relative;
   width: 30%;
+  border-radius: 10px;
 }
+
+.block-third:nth-child(1) {
+  background-color: #3498db;
+}
+.block-third:nth-child(2) {
+  background-color: #9b59b6;
+}
+.block-third:nth-child(3) {
+  background-color: #34495e;
+}
+
 
 .block-quarter {
   display: block;
@@ -44,6 +76,13 @@ h1,h2,h3,h4,h5,h6 {
   padding: 2px;
   position: relative;
   width: 22%;
+  border-radius: 10px;
+}
+.block-quarter:nth-child(1) {
+  background-color: #bdc3c7;
+}
+.block-quarter:nth-child(2) {
+  background-color: #7f8c8d;
 }
 
 .shadow {
