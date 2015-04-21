@@ -1,6 +1,15 @@
 
 
 $(document).ready(function(event) {
+
+
+  var cardModel = Backbone.Model.extend({
+	initialize: function() {
+		console.log("Hey, a card is here!");
+	}
+});
+
+
   var headerView = Backbone.View.extend({
 
     tagName: "article",
@@ -17,7 +26,7 @@ $(document).ready(function(event) {
     }
   });
 
-  var intheheader = { title: "Tom Taylor's Awesome Personal Concierge"}
+  var intheheader = { title: "The Awesome Personal Concierge"}
   var dotheheader = new headerView(intheheader);
 
   var halfCardView = Backbone.View.extend({
@@ -87,5 +96,22 @@ $(document).ready(function(event) {
   var cardEats = new thirdCardView(dataEats);
   var dataThree = { title: 'Grocery List', message: 'Awesome stuff'}
   var card3 = new thirdCardView(dataThree);
+
+
+  var cardlist = Backbone.collection.extend({
+    model: cardModel,
+    url: '/api/cards',
+    initialize: function(){
+      console.log("Here's my collection");
+
+
+
+  }
+  })
+
+
+
+
+
 
 });

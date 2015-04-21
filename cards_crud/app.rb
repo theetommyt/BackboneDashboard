@@ -11,6 +11,10 @@ get '/' do
   erb :index
 end
 
+get '/variables' do
+  erb :variables
+end
+
 post '/api/cards/:id' do
   content_type :json
   card = Card.create(params[:card])

@@ -9,7 +9,7 @@ body {
 h1 {
   font-family: 'Roboto', Arial, sans;
   color: blue;
-  text-shadow: 2px 1px 5px white;
+  text-shadow: 2px 1px 3px white;
   font-size: 40px;
   margin: 1px;
 }
@@ -17,7 +17,7 @@ h1 {
 h2,h3,h4,h5,h6 {
   font-family: 'Droid Serif', 'Times New Roman', 'Times', serif;
   color: rgba(10,60,150, 0.8);
-  text-shadow: 1px 4px 6px #fff, 0 0 0 #000, 1px 4px 6px #def;
+  text-shadow: 1px 1px 1px lightyellow, 0 0 0 #000, 1px 1px 1px #def;
   margin-top: 2px;
   margin-bottom: 2px;
 }
@@ -41,10 +41,10 @@ h2,h3,h4,h5,h6 {
 }
 
 .block-half:nth-child(1) {
-  background-color: #1abc9c;
+  background-color: rgba(39, 174, 96,1.0);
 }
 .block-half:nth-child(2) {
-  background-color: #16a085;
+  background-color: rgba(22, 160, 133,1.0);
 }
 
 
@@ -92,9 +92,10 @@ h2,h3,h4,h5,h6 {
 }
 
 .close {
-  color: darkgray;
+  color: darkyellow;
   margin-top: 20px;
-  border: 1px dashed darkgray;
+  border: 1px solid lightyellow;
+  border-radius: 8px;
   font-weight: bold;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
   font-size: 14px;
